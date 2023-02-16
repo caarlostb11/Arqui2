@@ -48,6 +48,7 @@ void Line_init()
 	linea = NULL;
 	tamano = 0;
 	}
+
 char *Line_get()
 	{
 	ssize_t n = getline(&linea,&tamano,stdin);
@@ -56,8 +57,18 @@ char *Line_get()
 	linea[strlen(linea)-1]=0;
 	return(linea);
 	}
+
 void Line_free()
 	{
 	free(linea);
 	}
 
+
+
+
+/*
+leerse toda la entrega hasta la ultima pagina que nos conocemos
+asegurarse de acabar hasta el ejercicio 7 de la practica 2
+IMPORTANTE el readme.txt con datos
+entregar diseño con diagramas de flujo
+*/
